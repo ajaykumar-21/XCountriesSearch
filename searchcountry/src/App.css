@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: center; 
   padding: 20px; 
 }
 
@@ -19,18 +20,19 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-input {
+/* .search-input {
   margin: 10px auto;
   width: 300px;
   height: 30px;
   text-align: center;
   border-radius: 10px;
   border: 1px solid #ccc;
-}
+} */
 
 .main{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }

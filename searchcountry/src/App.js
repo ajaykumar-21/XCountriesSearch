@@ -32,8 +32,8 @@ function App() {
   };
 
   return (
-    <div className="main">
-      <div className="search-input">
+    <div className="container">
+      {/* <div className="search-input"> */}
         <input
           type="text"
           placeholder="Search countries..."
@@ -41,8 +41,8 @@ function App() {
           onChange={handleInputChange}
           
         />
-      </div>
-      <div className="container">
+      {/* </div> */}
+      <div className="main">
         {filteredCountries.map((country) => (
           <div className="countryCard" key={country.name.common}>
             <img
@@ -50,7 +50,7 @@ function App() {
               alt={`Flag of ${country.name.common}`}
               style={{ width: "100px", height: "100px" }}
             />
-            <h3>{country.name.common}</h3>
+            <p>{country.name.common}</p>
           </div>
         ))}
       </div>
