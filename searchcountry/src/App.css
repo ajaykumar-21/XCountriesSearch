@@ -6,7 +6,7 @@
   height: 100%;
 }
 
-.cardStyles {
+.countryCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
