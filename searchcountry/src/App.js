@@ -32,14 +32,16 @@ function App() {
   };
 
   return (
-    <div className="searchBar">
-      <input
-        type="text"
-        placeholder="Search countries..."
-        value={searchQuery}
-        onChange={handleInputChange}
-        className="search-input"
-      />
+    <div className="main">
+      <div className="search-input">
+        <input
+          type="text"
+          placeholder="Search countries..."
+          value={searchQuery}
+          onChange={handleInputChange}
+          
+        />
+      </div>
       <div className="container">
         {filteredCountries.map((country) => (
           <div className="countryCard" key={country.name.common}>
